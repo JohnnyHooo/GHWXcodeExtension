@@ -59,7 +59,7 @@
 		ED6552392318FBB70036A04A /* GHWSortImportManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWSortImportManager.m; sourceTree = "<group>"; };
 		ED65523E23190CE00036A04A /* NSMutableArray+GHWExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+GHWExtension.h"; sourceTree = "<group>"; };
 		ED65523F23190CE00036A04A /* NSMutableArray+GHWExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+GHWExtension.m"; sourceTree = "<group>"; };
-		EDA60A3B2317F41000B5FA3D /* GHWXcodeExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHWXcodeExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA60A3B2317F41000B5FA3D /* HJXcodeExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJXcodeExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA60A3E2317F41000B5FA3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDA60A3F2317F41000B5FA3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EDA60A412317F41000B5FA3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		EDA60A3C2317F41000B5FA3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDA60A3B2317F41000B5FA3D /* GHWXcodeExtension.app */,
+				EDA60A3B2317F41000B5FA3D /* HJXcodeExtension.app */,
 				EDA60A562317F43500B5FA3D /* GHWExtension.appex */,
 			);
 			name = Products;
@@ -226,9 +226,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EDA60A3A2317F41000B5FA3D /* GHWXcodeExtension */ = {
+		EDA60A3A2317F41000B5FA3D /* HJXcodeExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDA60A4F2317F41000B5FA3D /* Build configuration list for PBXNativeTarget "GHWXcodeExtension" */;
+			buildConfigurationList = EDA60A4F2317F41000B5FA3D /* Build configuration list for PBXNativeTarget "HJXcodeExtension" */;
 			buildPhases = (
 				EDA60A372317F41000B5FA3D /* Sources */,
 				EDA60A382317F41000B5FA3D /* Frameworks */,
@@ -240,9 +240,9 @@
 			dependencies = (
 				EDA60A642317F43500B5FA3D /* PBXTargetDependency */,
 			);
-			name = GHWXcodeExtension;
+			name = HJXcodeExtension;
 			productName = GHWXcodeExtension;
-			productReference = EDA60A3B2317F41000B5FA3D /* GHWXcodeExtension.app */;
+			productReference = EDA60A3B2317F41000B5FA3D /* HJXcodeExtension.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EDA60A552317F43500B5FA3D /* GHWExtension */ = {
@@ -279,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EDA60A362317F41000B5FA3D /* Build configuration list for PBXProject "GHWXcodeExtension" */;
+			buildConfigurationList = EDA60A362317F41000B5FA3D /* Build configuration list for PBXProject "HJXcodeExtension" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -292,7 +292,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EDA60A3A2317F41000B5FA3D /* GHWXcodeExtension */,
+				EDA60A3A2317F41000B5FA3D /* HJXcodeExtension */,
 				EDA60A552317F43500B5FA3D /* GHWExtension */,
 			);
 		};
@@ -484,14 +484,14 @@
 				CODE_SIGN_ENTITLEMENTS = GHWXcodeExtension/GHWXcodeExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				DEVELOPMENT_TEAM = Z8FMEC8763;
 				INFOPLIST_FILE = GHWXcodeExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingyao.GHWXcodeExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenghu.GHWXcodeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -503,14 +503,14 @@
 				CODE_SIGN_ENTITLEMENTS = GHWXcodeExtension/GHWXcodeExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				DEVELOPMENT_TEAM = Z8FMEC8763;
 				INFOPLIST_FILE = GHWXcodeExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingyao.GHWXcodeExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenghu.GHWXcodeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -522,7 +522,7 @@
 				CODE_SIGN_ENTITLEMENTS = GHWExtension/GHWExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				DEVELOPMENT_TEAM = Z8FMEC8763;
 				INFOPLIST_FILE = GHWExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,7 +530,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingyao.GHWXcodeExtension.GHWExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenghu.GHWXcodeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -543,7 +543,7 @@
 				CODE_SIGN_ENTITLEMENTS = GHWExtension/GHWExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				DEVELOPMENT_TEAM = Z8FMEC8763;
 				INFOPLIST_FILE = GHWExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,7 +551,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jingyao.GHWXcodeExtension.GHWExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenghu.GHWXcodeExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -560,7 +560,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EDA60A362317F41000B5FA3D /* Build configuration list for PBXProject "GHWXcodeExtension" */ = {
+		EDA60A362317F41000B5FA3D /* Build configuration list for PBXProject "HJXcodeExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDA60A4D2317F41000B5FA3D /* Debug */,
@@ -569,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDA60A4F2317F41000B5FA3D /* Build configuration list for PBXNativeTarget "GHWXcodeExtension" */ = {
+		EDA60A4F2317F41000B5FA3D /* Build configuration list for PBXNativeTarget "HJXcodeExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDA60A502317F41000B5FA3D /* Debug */,

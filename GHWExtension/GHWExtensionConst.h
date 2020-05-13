@@ -32,7 +32,7 @@ static NSString * const kAddCommentFooterNoParamsExtensionCode = @" *  @return r
 
 /******************************* initView ******************************************/
 static NSString * const kInitViewExtensionCode = @"@interface %@ ()\n\n\n\n@end\n";
-static NSString * const kInitViewLifeCycleCode = @"\n- (instancetype)initWithFrame:(CGRect)frame {\n    self = [super initWithFrame:frame];\n    if (self) {\n        [self configViews];\n    }\n    return self;\n}\n\n- (void)configViews {\n\n}\n\n#pragma mark - Public Methods\n\n#pragma mark - Private Methods\n\n#pragma mark - Setter / Getter";
+static NSString * const kInitViewLifeCycleCode = @"\n- (void)awakeFromNib\n{\n    [super awakeFromNib];\n    [self setupXibView];\n}\n- (instancetype)init\n{\n    self = [super init];\n    if (self) {\n        [self setupXibView];\n    }\n    return self;\n}\n//MARK:创建xib视图\n- (void)setupXibView\n{\n    [self setupSelfNameXibOnSelf];\n    [self setup];\n}\n- (void)setup\n{\n   \n}";
 
 static NSString * const kInitTableViewCellLifeCycleCode = @"\n- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {\n    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];\n    if (self) {\n        [self configViews];\n    }\n    return self;\n}\n\n- (void)configViews {\n    self.selectionStyle = UITableViewCellSelectionStyleNone;\n}\n\n- (void)configWithData {\n\n\n}";
 

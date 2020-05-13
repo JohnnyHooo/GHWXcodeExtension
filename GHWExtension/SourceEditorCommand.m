@@ -22,13 +22,13 @@
     [invocation.buffer.lines enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSLog(@"%@", obj);
     }];
-    if ([identifier hasPrefix:@"com.jingyao.GHWXcodeExtension.GHWExtension.sortImport"]) {
+    if ([identifier hasPrefix:@"com.jingyao.HJXcodeExtension.GHWExtension.sortImport"]) {
         [[GHWSortImportManager sharedInstane] processCodeWithInvocation:invocation];
-    } else if ([identifier hasPrefix:@"com.jingyao.GHWXcodeExtension.GHWExtension.initView"]) {
+    } else if ([identifier hasPrefix:@"com.jingyao.HJXcodeExtension.GHWExtension.initView"]) {
         [[GHWInitViewManager sharedInstane] processCodeWithInvocation:invocation];
-    } else if ([identifier hasPrefix:@"com.jingyao.GHWXcodeExtension.GHWExtension.addLazyCode"]) {
+    } else if ([identifier hasPrefix:@"com.jingyao.HJXcodeExtension.GHWExtension.addLazyCode"]) {
         [[GHWAddLazyCodeManager sharedInstane] processCodeWithInvocation:invocation];
-    } else if ([identifier hasPrefix:@"com.jingyao.GHWXcodeExtension.GHWExtension.addImport"]) {
+    } else if ([identifier hasPrefix:@"com.jingyao.HJXcodeExtension.GHWExtension.addImport"]) {
         [[GHWAddImportManager sharedInstane] processCodeWithInvocation:invocation];
     }
     completionHandler(nil);

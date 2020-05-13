@@ -18,7 +18,7 @@
                BlueprintIdentifier = "EDA60A552317F43500B5FA3D"
                BuildableName = "GHWExtension.appex"
                BlueprintName = "GHWExtension"
-               ReferencedContainer = "container:GHWXcodeExtension.xcodeproj">
+               ReferencedContainer = "container:HJXcodeExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EDA60A3A2317F41000B5FA3D"
-               BuildableName = "GHWXcodeExtension.app"
-               BlueprintName = "GHWXcodeExtension"
-               ReferencedContainer = "container:GHWXcodeExtension.xcodeproj">
+               BuildableName = "HJXcodeExtension.app"
+               BlueprintName = "HJXcodeExtension"
+               ReferencedContainer = "container:HJXcodeExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,46 +42,39 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EDA60A552317F43500B5FA3D"
             BuildableName = "GHWExtension.appex"
             BlueprintName = "GHWExtension"
-            ReferencedContainer = "container:GHWXcodeExtension.xcodeproj">
+            ReferencedContainer = "container:HJXcodeExtension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
+      askForAppToLaunch = "Yes"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <PathRunnable
-         runnableDebuggingMode = "0"
-         FilePath = "/&lt;placeholder&gt;">
-      </PathRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EDA60A3A2317F41000B5FA3D"
-            BuildableName = "GHWXcodeExtension.app"
-            BlueprintName = "GHWXcodeExtension"
-            ReferencedContainer = "container:GHWXcodeExtension.xcodeproj">
+            BuildableName = "HJXcodeExtension.app"
+            BlueprintName = "HJXcodeExtension"
+            ReferencedContainer = "container:HJXcodeExtension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -95,9 +88,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EDA60A3A2317F41000B5FA3D"
-            BuildableName = "GHWXcodeExtension.app"
-            BlueprintName = "GHWXcodeExtension"
-            ReferencedContainer = "container:GHWXcodeExtension.xcodeproj">
+            BuildableName = "HJXcodeExtension.app"
+            BlueprintName = "HJXcodeExtension"
+            ReferencedContainer = "container:HJXcodeExtension.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

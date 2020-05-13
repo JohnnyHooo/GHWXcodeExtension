@@ -24,19 +24,19 @@
 
     
     return @[@{XCSourceEditorCommandClassNameKey: @"SourceEditorCommand",
-               XCSourceEditorCommandIdentifierKey: @"com.jingyao.GHWXcodeExtension.GHWExtension.initView",
+               XCSourceEditorCommandIdentifierKey: @"com.jingyao.HJXcodeExtension.GHWExtension.initView",
                XCSourceEditorCommandNameKey: @"initView"
                },
              @{XCSourceEditorCommandClassNameKey: @"SourceEditorCommand",
-               XCSourceEditorCommandIdentifierKey: @"com.jingyao.GHWXcodeExtension.GHWExtension.addLazyCode",
+               XCSourceEditorCommandIdentifierKey: @"com.jingyao.HJXcodeExtension.GHWExtension.addLazyCode",
                XCSourceEditorCommandNameKey: @"addLazyCode"
                },
              @{XCSourceEditorCommandClassNameKey: @"SourceEditorCommand",
-               XCSourceEditorCommandIdentifierKey: @"com.jingyao.GHWXcodeExtension.GHWExtension.addImport",
+               XCSourceEditorCommandIdentifierKey: @"com.jingyao.HJXcodeExtension.GHWExtension.addImport",
                XCSourceEditorCommandNameKey: @"addImport"
                },
              @{XCSourceEditorCommandClassNameKey: @"SourceEditorCommand",
-               XCSourceEditorCommandIdentifierKey: @"com.jingyao.GHWXcodeExtension.GHWExtension.sortImport",
+               XCSourceEditorCommandIdentifierKey: @"com.jingyao.HJXcodeExtension.GHWExtension.sortImport",
                XCSourceEditorCommandNameKey: @"sortImport"
                }];
 }
