@@ -11,6 +11,7 @@
 #import "GHWAddLazyCodeManager.h"
 #import "GHWSortImportManager.h"
 #import "GHWAddImportManager.h"
+#import "GHWTranslationManager.h"
 
 @implementation SourceEditorCommand
 
@@ -30,7 +31,9 @@
         [[GHWAddLazyCodeManager sharedInstane] processCodeWithInvocation:invocation];
     } else if ([identifier hasPrefix:@"com.jingyao.HJXcodeExtension.GHWExtension.addImport"]) {
         [[GHWAddImportManager sharedInstane] processCodeWithInvocation:invocation];
-    }
+    } else if ([identifier hasPrefix:@"com.jingyao.HJXcodeExtension.GHWExtension.translation"]) {
+           [[GHWTranslationManager sharedInstane] processCodeWithInvocation:invocation];
+       }
     completionHandler(nil);
 }
 

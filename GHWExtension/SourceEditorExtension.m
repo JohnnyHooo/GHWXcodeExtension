@@ -38,7 +38,11 @@
              @{XCSourceEditorCommandClassNameKey: @"SourceEditorCommand",
                XCSourceEditorCommandIdentifierKey: @"com.jingyao.HJXcodeExtension.GHWExtension.sortImport",
                XCSourceEditorCommandNameKey: @"sortImport"
-               }];
+               },
+             @{XCSourceEditorCommandClassNameKey: @"SourceEditorCommand",
+               XCSourceEditorCommandIdentifierKey: @"com.jingyao.HJXcodeExtension.GHWExtension.translation",
+               XCSourceEditorCommandNameKey: @"翻译"
+             }];
 }
 
 

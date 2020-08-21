@@ -1,0 +1,7 @@
+target 'GHWExtension' do
+pod 'AFNetworking'
+end
+
+target 'HJXcodeExtension' do
+pod 'AFNetworking'
+end
