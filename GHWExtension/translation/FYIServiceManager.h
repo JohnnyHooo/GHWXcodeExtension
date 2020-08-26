@@ -10,8 +10,7 @@
 
 @interface FYIServiceManager : NSObject
 
-+ (FYIServiceManager *)sharedFYIServiceManager;
 
-- (void)requestDataWithTextString:(NSString *)text
++ (void)requestDataWithTextString:(NSString *)text
                              data:(void (^)(id response))data;
 @end

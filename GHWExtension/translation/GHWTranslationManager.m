@@ -8,6 +8,8 @@
 
 #import "GHWTranslationManager.h"
 #import "GHWExtensionConst.h"
+#import "FYIServiceManager.h"
+#import "NSString+FYIHumpString.h"
 
 @implementation GHWTranslationManager
 
@@ -37,30 +39,30 @@
     
     NSString *selectLineStr = invocation.buffer.lines[startLine];
     NSString *selectContentStr = [[selectLineStr substringWithRange:NSMakeRange(startColumn, endColumn - startColumn)] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    if ([selectContentStr length] == 0) {
-        return;
-    }
-//    invocation.
-    NSString *insertStr = [NSString stringWithFormat:@"#import \"%@.h\"", selectContentStr];
-    
-    NSInteger lastImportIndex = -1;
-    for (NSInteger i = 0; i < [invocation.buffer.lines count]; i++) {
-        NSString *contentStr = [invocation.buffer.lines[i] deleteSpaceAndNewLine];
-        if ([contentStr hasPrefix:@"#import"]) {
-            lastImportIndex = i;
+
+
+//    invocation.buffer.lines[startLine] = [selectContentStr stringByReplacingCharactersInRange:NSMakeRange(startColumn, endColumn - startColumn) withString:[NSString stringWithFormat:@"结果"]];
+    NSLog(@"---> %@",@"开始翻译了");
+
+    __block NSString *outStr = @"";
+    [FYIServiceManager requestDataWithTextString:selectContentStr data:^(id response) {
+        outStr = [response firstObject];
+        if (!outStr.length) {
+            outStr = @"翻译错误";
         }
-    }
+        outStr = [NSString commonStringToHumpString:outStr];
+//        invocation.buffer.lines[startLine] = [invocation.buffer.lines[startLine] stringByReplacingCharactersInRange:NSMakeRange(startColumn, endColumn - startColumn) withString:outStr];
+        [self changeTextWithRange:NSMakeRange(startColumn, endColumn - startColumn) withString:outStr invocation:invocation startLine:startLine];
+    }];
+  
     
-    NSInteger alreadyIndex = [invocation.buffer.lines indexOfFirstItemContainStr:insertStr];
-    if (alreadyIndex != NSNotFound) {
-        return;
-    }
-    
-    NSInteger insertIndex = 0;
-    if (lastImportIndex != -1) {
-        insertIndex = lastImportIndex + 1;
-    }
-    [invocation.buffer.lines insertObject:insertStr atIndex:insertIndex];
 }
+
+- (void)changeTextWithRange:(NSRange)range withString:(NSString *)replacement invocation:(XCSourceEditorCommandInvocation *)invocation startLine:(NSInteger)startLine
+{
+    invocation.buffer.lines[startLine] = [invocation.buffer.lines[startLine] stringByReplacingCharactersInRange:range withString:replacement];
+
+}
+
 
 @end

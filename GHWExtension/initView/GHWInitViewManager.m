@@ -61,7 +61,7 @@
             NSInteger lifeCycleIndex = [invocation.buffer.lines indexOfFirstItemContainStr:kImplementation];
             if (lifeCycleIndex != NSNotFound) {
                 lifeCycleIndex = lifeCycleIndex + 1;
-                NSString *lifeCycleStr = kInitTableViewCellLifeCycleCode;
+                NSString *lifeCycleStr = [NSString stringWithFormat:kInitTableViewCellLifeCycleCode,className];
                 NSArray *lifeCycleContentArray = [lifeCycleStr componentsSeparatedByString:@"\n"];
                 [invocation.buffer.lines insertItemsOfArray:lifeCycleContentArray fromIndex:lifeCycleIndex];
             }
